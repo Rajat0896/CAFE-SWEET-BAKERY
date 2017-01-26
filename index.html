@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<style>
+.main-content{
+  background-image: url(http://cafesweetsbakery.com/templates/construction/images/background.jpg);
+}
+.wrapper{
+  width: 72%;
+  background-color: white;
+  margin-left: 15%;
+}
+#logo{
+  height: 130px;
+  padding-top: 10px;
+  margin-left: 25px;
+  width: 476px;
+}
+.navigation-bar{
+margin:0 20px 24px 100px;
+position: relative;
+border-bottom: 2px solid grey;
+width: 750px;
+height: 30px;
+}
+.navigation-bar li{
+  display: inline;
+  padding: 0px 15px 0px 15px;
+  font-size: 20px;
+}
+a{
+  color: grey;
+}
+.home-page-pic{
+  background-image: url("http://i.imgur.com/uLZDRpa.jpg");
+  margin:10px 15px 20px 35px;
+  background-repeat: no-repeat;
+  height:360px;
+  width: 875px;
+  position: relative;
+}
+.home-page-pic p {
+  color: rgba(225,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(148,43,226,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(148,43,226,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(148,43,226,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  font-family: 'Lobster', cursive;
+  font-size: 15px;
+  width:
+}
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 100px;
+}
+
+.show-description small {
+  opacity: 1;
+  font-family: 'Lobster', cursive;
+  font-size: 15px;
+}
+
+.pudding{
+background-image: url("http://i.imgur.com/LvA8tr7.jpg");
+  margin:0px 15px 10px 35px;
+  height: 360px;
+  width: 875px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.title{
+  margin-left: 25px;
+font-family: 'Playball', cursive;
+  color: grey;
+}
+.contents{
+  margin:0px 25px 0px 25px;
+  text-align: justify;
+  font-family: 'Lobster', cursive;
+  color: grey;
+}
+.space-bar{
+  border-bottom: 3px solid grey;
+  height: 25px;
+  margin: 0px 25px 10px 25px;
+}
+.footer{
+  margin-left: 20px;
+  font-family: 'Lobster', cursive;
+  color: grey;
+}
+</style>
+</head>
+<body class="main-content">
+<div class="wrapper">
+<div id="logo">
+  <img src="http://i.imgur.com/jKIRJgf.png"></img>
+</div>
+<div class="navigation-bar">
+   <ul>
+     <li><i class="material-icons">home</i><a href="#">HOME</a></li>
+       <li><a href="#">ABOUT US</a></li>
+       <li><a href="#">GALLERY</a></li>
+       <li><a href="#">OUR MENU</a></li>
+       <li><a href="#">CONTACT US</a></li>
+       <li>
+       <ul>
+</div>
+<div class="home-page-pic">
+    <p> Sweet Affirmation<br>
+    <small>Our wedding cake was absolutely perfect. A beautiful three-tier cake, white with pale pink elegant design and artfully placed flower decor.
+      It looked amazing and was absolutely delicious. They were so sweet throughout the process and very helpful.  </small></p>
+</div>
+<div class="pudding">
+</div>
+<div class="space-bar">
+</div>
+<div class="title">
+   <h2>WELCOME TO CAFE SWEET BAKERY</h2>
+</div>
+<div class="contents">
+  <p>Welcome home to Cafe Sweets Bakery! That the family feeling and experience everyone will have once you enter our doors.
+    Cafe Sweets Bakery strives to make you feel just like family when you visit our web site and Bakery location.
+    Our web site shares a great Menu selection, delicious bake good discounts, special promotions, customer testimonials and much more.
+     So, browse our web site, give us your feedback, visit Cafe Sweets Bakery and be a part of the family!</p>
+</div>
+<div class="space-bar">
+</div>
+<div class="footer">
+  <p>Copyright  2017. Cafe Sweets Bakery.</p>
+</div>
+</div>
+<script>
+  $('.home-page-pic').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
